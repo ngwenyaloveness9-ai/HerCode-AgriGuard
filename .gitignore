@@ -1,4 +1,18 @@
-node_modules
-dist
+# Environment files
 .env
-.env.local
+.env.*
+!.env.example
+
+# Firebase Admin credentials
+backend/firebase/firebase-service-account.json
+**/firebase-service-account.json
+**/serviceAccountKey.json
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# Node
+node_modules/
+dist/
