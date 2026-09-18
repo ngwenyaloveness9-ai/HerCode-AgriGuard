@@ -1,0 +1,9 @@
+{
+  "name": "agriguard-fullstack",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "start": "concurrently -k -n BACKEND,FRONTEND \"npm --prefix backend start\" \"npm --prefix frontend run dev\""
+  },
+  "devDependencies": {"concurrently":"9.2.1"}
+}

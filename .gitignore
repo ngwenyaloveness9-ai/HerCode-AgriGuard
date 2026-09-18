@@ -1,0 +1,15 @@
+﻿node_modules/
+**/node_modules/
+.env
+.env.*
+!.env.example
+dist/
+build/
+
+# Secrets
+.env
+.env.*
+!.env.example
+serviceAccountKey.json
+node_modules/
+

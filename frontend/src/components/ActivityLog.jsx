@@ -1,0 +1,1 @@
+import {Radio} from 'lucide-react'; export default function ActivityLog({logs}){return <div className="panel activity"><div className="panelTitle"><div><span className="eyebrow">EVENT STREAM</span><h3>Recent activity</h3></div><Radio/></div>{logs.map((l,i)=><div className="log" key={i}><span>{l.time}</span><i></i><p>{l.text}</p></div>)}</div>}

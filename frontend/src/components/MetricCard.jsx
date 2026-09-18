@@ -1,0 +1,1 @@
+export default function MetricCard({icon,label,value,note,warn,active}){return <div className={`metric panel ${warn?'warn':''} ${active?'active':''}`}><div className="metricIcon">{icon}</div><div><span>{label}</span><strong>{value}</strong><small>{note}</small></div></div>}

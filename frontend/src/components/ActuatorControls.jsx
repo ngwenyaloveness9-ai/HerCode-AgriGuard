@@ -1,0 +1,2 @@
+import {Droplets,Power,Volume2} from 'lucide-react'; import {systemSummary} from '../utils/system';
+export default function ActuatorControls({data,voice}){return <div className="panel controls"><div className="panelTitle"><div><span className="eyebrow">LIVE CONTROL</span><h3>Water Pump</h3></div><Power/></div><button onClick={()=>voice.command(data.pumpOn?'pump off':'pump on')}><Droplets/>{data.pumpOn?'Stop pump':'Start pump'}</button><button onClick={()=>voice.speak(systemSummary(data))}><Volume2/>Speak system status</button></div>}
