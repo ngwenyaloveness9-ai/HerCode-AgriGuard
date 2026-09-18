@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿node_modules/
 **/node_modules/
 .env
@@ -13,3 +14,23 @@ build/
 serviceAccountKey.json
 node_modules/
 
+=======
+# Environment files
+.env
+.env.*
+!.env.example
+
+# Firebase Admin credentials
+backend/firebase/firebase-service-account.json
+**/firebase-service-account.json
+**/serviceAccountKey.json
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# Node
+node_modules/
+dist/
+>>>>>>> 4b12397fef413bec8fdd668d89be31e00c788e4f
